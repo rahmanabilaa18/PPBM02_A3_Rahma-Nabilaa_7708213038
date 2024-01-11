@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".film">
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@drawable/back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/H_back"
+        />
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="500dp">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:flipInterval="2500"
+            android:autoStart="true"
+            android:layout_margin="50dp"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/creator">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/resistencia">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kingsman">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/johnwick">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wakanda">
+
+            </RelativeLayout>
+
+        </ViewFlipper>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/S_btn_3"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="550dp"
+        android:backgroundTint="@color/black"
+        android:text="NEW"
+        android:textColor="@color/cream"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/S_btn_4"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="@color/black"
+        android:text="HISTORY"
+        android:textColor="@color/cream"
+        android:fontFamily="sans-serif-black"
+        />
+
+
+
+
+</RelativeLayout>
